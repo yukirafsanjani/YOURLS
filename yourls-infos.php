@@ -252,7 +252,7 @@ yourls_html_htag( yourls__( 'Statistics Panel' ), 1, yourls_esc_html( $keyword )
 				<tbody>
 					<tr>
 						<td><?php yourls_e( 'Short URL' ); ?></td>
-						<td><img src="<?php echo yourls_favicon(); ?>"/></td>
+						<td><img src="<?php echo yourls_favicon( false ); ?>"/></td>
 						<td><?php if( $aggregate ) {
 								$i = 0;
 								foreach( $keyword_list as $k ) {
